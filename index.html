@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>احتراف السلامة | SAFETY PRO — حلول السلامة والوقاية من الحرائق</title>
+<meta name="description" content="شركة احتراف السلامة (SAFETY PRO) - حلول شاملة للسلامة والوقاية من الحرائق، تصميم وتركيب أنظمة الإطفاء والإنذار، صيانة، تدريب واستشارات.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- global gradient defs, referenced by every icon/logo instance across the page -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <linearGradient id="gradOR" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffb347"/>
+      <stop offset="55%" stop-color="#f7941d"/>
+      <stop offset="100%" stop-color="#ed1c24"/>
+    </linearGradient>
+    <linearGradient id="gradOR2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f7941d"/>
+      <stop offset="100%" stop-color="#c8151b"/>
+    </linearGradient>
+  </defs>
+</svg>
+
+<!-- decorative ember canvas -->
+<canvas id="embers"></canvas>
+
+<!-- ===== HEADER ===== -->
+<header class="site-header" id="siteHeader">
+  <div class="header-inner">
+    <a href="#top" class="brand" aria-label="احتراف السلامة - الصفحة الرئيسية">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 120 120" class="shield-svg">
+          <path class="shield-outline" d="M60 6 L106 22 V56 C106 86 86 104 60 116 C34 104 14 86 14 56 V22 Z" fill="#20232a"/>
+          <path d="M60 16 L98 29 V56 C98 80 82 95 60 105 C38 95 22 80 22 56 V29 Z" fill="#f3e7d8"/>
+          <path d="M60 40 L92 54 L60 68 L28 54 Z" fill="url(#gradOR)"/>
+          <path d="M60 62 L88 74 C84 88 74 98 60 105 C46 98 36 88 32 74 Z" fill="url(#gradOR2)"/>
+        </svg>
+      </span>
+      <span class="brand-text">
+        <span class="brand-ar">احتراف السلامة</span>
+        <span class="brand-en">SAFETY PRO <em>fire protection services</em></span>
+      </span>
+    </a>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="#about">من نحن</a>
+      <a href="#services">خدماتنا</a>
+      <a href="#values">قيمنا</a>
+      <a href="#vision">رؤيتنا وأهدافنا</a>
+      <a href="#partners">شركاؤنا</a>
+      <a href="#contact" class="nav-cta">تواصل معنا</a>
+    </nav>
+
+    <button class="nav-toggle" id="navToggle" aria-label="فتح القائمة" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="hero-chevrons" aria-hidden="true">
+      <span class="chev chev-1"></span>
+      <span class="chev chev-2"></span>
+      <span class="chev chev-3"></span>
+    </div>
+    <div class="hero-inner">
+      <p class="eyebrow reveal">رؤية 2030 · المملكة العربية السعودية</p>
+      <h1 class="hero-title reveal">
+        إحتراف السلامة<br>
+        <span class="grad-text">حماية وأكثر</span>
+      </h1>
+      <p class="hero-sub reveal">
+        شركة سعودية رائدة في مجال السلامة ومكافحة الحرائق، متخصصة في تصميم وتوريد وتركيب وصيانة
+        أنظمة الإطفاء والإنذار، لحماية الأرواح والممتلكات بأعلى معايير الجودة والاحترافية.
+      </p>
+      <div class="hero-actions reveal">
+        <a href="#services" class="btn btn-primary">تعرف على خدماتنا</a>
+        <a href="#contact" class="btn btn-ghost">تواصل معنا</a>
+      </div>
+    </div>
+    <div class="scroll-cue" aria-hidden="true"><span></span></div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="section about" id="about">
+    <div class="section-inner grid-2">
+      <div class="about-media reveal">
+        <div class="media-frame">
+          <div class="media-glow"></div>
+          <svg viewBox="0 0 200 200" class="about-svg" aria-hidden="true">
+            <circle cx="100" cy="100" r="92" fill="none" stroke="url(#gradOR)" stroke-width="2" opacity="0.5"/>
+            <circle cx="100" cy="100" r="70" fill="#20232a"/>
+            <path d="M100 55 L138 75 V115 C138 138 122 152 100 162 C78 152 62 138 62 115 V75 Z" fill="url(#gradOR)" opacity="0.9"/>
+            <path d="M100 78 L120 88 V108 C120 120 112 128 100 134 C88 128 80 120 80 108 V88 Z" fill="#20232a"/>
+          </svg>
+        </div>
+      </div>
+      <div class="about-copy">
+        <p class="eyebrow reveal">نبذة عن الشركة</p>
+        <h2 class="section-title reveal">شريككم الموثوق في السلامة من الحرائق</h2>
+        <p class="reveal">
+          شركة سلامة ومكافحة حرائق رائدة في مجال توفير الحلول الشاملة للسلامة والوقاية من الحرائق.
+          نحن متخصصون في تقديم الخدمات والمنتجات التي تساعد عملاءنا في حماية الممتلكات والأرواح،
+          عبر فريق فني متمرس ومعدات معتمدة من كبرى العلامات العالمية.
+        </p>
+        <div class="stat-row reveal">
+          <div class="stat"><span class="stat-num">7+</span><span class="stat-label">خدمات متكاملة</span></div>
+          <div class="stat"><span class="stat-num">30+</span><span class="stat-label">شريك وعلامة عالمية</span></div>
+          <div class="stat"><span class="stat-num">25+</span><span class="stat-label">عميل وجهة</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES ===== -->
+  <section class="section services" id="services">
+    <div class="section-inner">
+      <p class="eyebrow reveal center">خدماتنا</p>
+      <h2 class="section-title reveal center">كل ما تحتاجه لحماية منشأتك</h2>
+      <div class="services-grid">
+
+        <article class="service-card reveal">
+          <span class="service-badge">01</span>
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48"><path d="M24 4c6 8-6 10-6 18a6 6 0 0 0 12 0c0-3-2-4-2-7 4 3 6 8 6 12a10 10 0 0 1-20 0c0-11 10-13 10-23Z" fill="url(#gradOR)"/></svg>
+          </div>
+          <h3>تصميم وتنفيذ أنظمة الإطفاء والإنذار</h3>
+          <p>تصميم وتنفيذ أنظمة الإطفاء والإنذار وخطط الإخلاء ضد الحرائق وفق أحدث الاشتراطات والمعايير.</p>
+        </article>
+
+        <article class="service-card reveal">
+          <span class="service-badge">02</span>
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48"><rect x="12" y="10" width="8" height="30" rx="3" fill="url(#gradOR)"/><rect x="24" y="10" width="8" height="30" rx="3" fill="url(#gradOR)"/><rect x="12" y="6" width="20" height="6" rx="2" fill="url(#gradOR)"/></svg>
+          </div>
+          <h3>أنظمة الإطفاء بكل أنواعها</h3>
+          <p>توريد وتركيب أنظمة الإطفاء (النظام المائي، النظام الرغوي، النظام الغازي) لمختلف بيئات العمل.</p>
+        </article>
+
+        <article class="service-card reveal">
+          <span class="service-badge">03</span>
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="16" fill="none" stroke="url(#gradOR)" stroke-width="4"/><circle cx="24" cy="24" r="6" fill="url(#gradOR)"/></svg>
+          </div>
+          <h3>أجهزة الإنذار والكواشف</h3>
+          <p>توريد وتركيب أجهزة الإنذار المعنونة وغير المعنونة، وكواشف الدخان والحرارة واللهب والغاز ونقاط النداء.</p>
+        </article>
+
+        <article class="service-card reveal">
+          <span class="service-badge">04</span>
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48"><rect x="10" y="6" width="20" height="36" rx="3" fill="url(#gradOR)"/><circle cx="26" cy="24" r="2" fill="#20232a"/></svg>
+          </div>
+          <h3>أنظمة الإخلاء والسلامة الإنشائية</h3>
+          <p>أنظمة الإخلاء الصوتية، أبواب الطوارئ، الجدران المقاومة للحريق، سلالم الهروب، الإنارة الاحتياطية وعلامات الخروج وخطط الإخلاء ونقاط التجمع.</p>
+        </article>
+
+        <article class="service-card reveal">
+          <span class="service-badge">05</span>
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48"><path d="M24 6a18 18 0 1 0 0.001 0Z" fill="none" stroke="url(#gradOR)" stroke-width="4"/><path d="M24 14v10l7 5" fill="none" stroke="url(#gradOR)" stroke-width="4" stroke-linecap="round"/></svg>
+          </div>
+          <h3>عقود الصيانة الشاملة</h3>
+          <p>عقود صيانة دورية واضطرارية لجميع أنظمة الحماية ومكافحة الحرائق لضمان جاهزيتها الدائمة.</p>
+        </article>
+
+        <article class="service-card reveal">
+          <span class="service-badge">06</span>
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48"><circle cx="16" cy="16" r="6" fill="url(#gradOR)"/><circle cx="32" cy="16" r="6" fill="url(#gradOR)"/><path d="M6 40c0-8 6-12 10-12s10 4 10 12M22 40c0-8 6-12 10-12s10 4 10 12" fill="none" stroke="url(#gradOR)" stroke-width="3"/></svg>
+          </div>
+          <h3>تدريب وتأهيل العملاء</h3>
+          <p>تدريب العملاء على الاستخدام الفعّال لمعدات وأجهزة مكافحة الحرائق وتطبيق الخطط الوقائية.</p>
+        </article>
+
+        <article class="service-card reveal">
+          <span class="service-badge">07</span>
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48"><path d="M8 34 20 22 28 30 40 14" fill="none" stroke="url(#gradOR)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><circle cx="40" cy="14" r="3" fill="url(#gradOR)"/></svg>
+          </div>
+          <h3>استشارات السلامة والوقاية</h3>
+          <p>تقديم استشارات متخصصة في مجال السلامة والوقاية من الحرائق لدعم قرارات عملائنا.</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== VALUES / MISSION ===== -->
+  <section class="section values" id="values">
+    <div class="section-inner grid-2 rev">
+      <div class="values-copy">
+        <p class="eyebrow reveal">قيمنا</p>
+        <h2 class="section-title reveal">النزاهة والاحترافية أساس عملنا</h2>
+        <p class="reveal">
+          نحن نولي أهمية قصوى للسلامة، ونسعى لتوفير أفضل الحلول والخدمات لعملائنا، ونحن ملتزمون
+          بالنزاهة والاحترافية في كل ما نقوم به.
+        </p>
+
+        <div class="mission-box reveal">
+          <span class="mission-eyebrow">مهمتنا</span>
+          <p>زيادة نسبة الوعي الفردي والمجتمعي في مجال مكافحة الحرائق، وتوفير حماية متكاملة لعملائنا،
+          والمساهمة في تحقيق بيئة آمنة ومحمية من الحرائق.</p>
+        </div>
+      </div>
+
+      <div class="values-visual reveal" aria-hidden="true">
+        <div class="pillar"><span>01</span>السلامة أولاً</div>
+        <div class="pillar"><span>02</span>النزاهة</div>
+        <div class="pillar"><span>03</span>الاحترافية</div>
+        <div class="pillar"><span>04</span>الجودة</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== VISION & GOALS ===== -->
+  <section class="section vision" id="vision">
+    <div class="section-inner">
+      <p class="eyebrow reveal center">رؤيتنا</p>
+      <h2 class="section-title reveal center">نحو مستقبل آمن من الحرائق</h2>
+      <p class="vision-text reveal">
+        نسعى لأن نكون الشركة الرائدة في مجال السلامة ومكافحة الحرائق على المستويين الإقليمي والدولي،
+        وأن نساهم في بناء مجتمع آمن ومحمي من الحرائق، ونقدم أفضل الحلول والخدمات التي تحمي الأرواح
+        والممتلكات، كما نسعى لتقديم حلول عالية الجودة والمبتكرة والصديقة للبيئة، مدعومة بأخلاقيات
+        عمل عالية وفريق متميز — تحقيقاً لرؤية المملكة 2030.
+      </p>
+
+      <div class="goals-wrap">
+        <h3 class="goals-title reveal center">أهدافنا الاستراتيجية</h3>
+        <ol class="goals-list">
+          <li class="reveal"><span class="goal-num">1</span><p>تقديم خدمات عالية الجودة ومتميزة للعملاء تضمن لهم السلامة والحماية الفعالة من الحرائق.</p></li>
+          <li class="reveal"><span class="goal-num">2</span><p>التوسع في السوق لتوسيع نطاق العمل وزيادة الانتشار في مناطق جديدة وأسواق دولية.</p></li>
+          <li class="reveal"><span class="goal-num">3</span><p>تطوير التكنولوجيا والابتكار والتركيز على تحسين أحدث التقنيات في مجالات السلامة ومكافحة الحرائق.</p></li>
+          <li class="reveal"><span class="goal-num">4</span><p>تحسين الاستجابة السريعة وتقليل وقت الاستجابة للحوادث والطوارئ للعملاء.</p></li>
+          <li class="reveal"><span class="goal-num">5</span><p>تحسين السلامة المهنية للعملاء وتقديم التدريب والتوعية للحفاظ على بيئة عمل آمنة.</p></li>
+          <li class="reveal"><span class="goal-num">6</span><p>الاستدامة البيئية والعمل بتقنيات جديدة تقلل من التأثير البيئي وتحقق ممارسات صحية آمنة ومستدامة.</p></li>
+          <li class="reveal"><span class="goal-num">7</span><p>التميز في إرضاء العملاء والعمل على بناء علاقات قوية معهم.</p></li>
+          <li class="reveal"><span class="goal-num">8</span><p>النمو المالي والربحي لتحقيق النمو المستدام وتحقيق أرباح قوية للشركة.</p></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PARTNERS ===== -->
+  <section class="section partners" id="partners">
+    <div class="section-inner">
+      <p class="eyebrow reveal center">شركاء النجاح</p>
+      <h2 class="section-title reveal center">بالتعاون مع علامات عالمية موثوقة</h2>
+      <div class="badge-cloud reveal">
+        <span>SIEMENS</span><span>UL LISTED</span><span>Context Plus</span><span>Zeta</span><span>ASMP</span>
+        <span>FM Approved</span><span>ASTM International</span><span>NFPA</span><span>SFFECO</span>
+        <span>Simplex</span><span>HD Fire Protect</span><span>Honeywell Gent</span><span>C-TEC</span>
+        <span>National</span><span>Interpipe</span><span>Tyco</span><span>KSB</span><span>Viking</span>
+        <span>Lifeco</span><span>Hitachi</span><span>+GF+</span><span>Belden</span><span>Ansul</span>
+        <span>Mueller</span><span>Naffco</span><span>Autocall</span>
+      </div>
+
+      <p class="eyebrow reveal center partners-sep">عملاؤنا</p>
+      <div class="badge-cloud reveal">
+        <span>أرامكو السعودية</span><span>شركة المياه الوطنية</span><span>وزارة العمل والتنمية الاجتماعية</span>
+        <span>وزارة الرياضة</span><span>وزارة العدل</span><span>جامعة الملك سعود</span><span>جامعة اليمامة</span>
+        <span>Total</span><span>LuLu Hypermarket</span><span>Tamimi Markets</span><span>Pepsi ABP</span>
+        <span>التعاونية</span><span>Panda</span><span>Arabian Oud</span><span>ENOC</span><span>LG</span>
+        <span>الجزيرة</span><span>Golds Gym</span><span>Adama</span><span>الفنار</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="section contact" id="contact">
+    <div class="section-inner contact-inner">
+      <div class="contact-copy">
+        <p class="eyebrow reveal">تواصل معنا</p>
+        <h2 class="section-title reveal">جاهزون لحماية منشأتكم</h2>
+        <p class="reveal">تواصلوا مع فريقنا للحصول على استشارة أو عرض سعر لخدمات السلامة ومكافحة الحرائق.</p>
+
+        <ul class="contact-list reveal">
+          <li>
+            <span class="contact-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 2C7 2 3 6 3 11c0 6.5 9 11 9 11s9-4.5 9-11c0-5-4-9-9-9Zm0 12.5A3.5 3.5 0 1 1 12 7.5a3.5 3.5 0 0 1 0 7Z" fill="url(#gradOR)"/></svg>
+            </span>
+            <span>الرياض - الملز - شارع الظهران</span>
+          </li>
+          <li>
+            <span class="contact-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.9 21 3 13.1 3 3.9c0-.6.4-1 1-1h3.4c.6 0 1 .4 1 1 0 1.2.2 2.5.6 3.6.1.4 0 .8-.2 1L6.6 10.8Z" fill="url(#gradOR)"/></svg>
+            </span>
+            <a href="tel:+966530567987" dir="ltr">+966 530 567 987</a>
+          </li>
+          <li>
+            <span class="contact-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2Zm16 4-8 5-8-5" fill="none" stroke="url(#gradOR)" stroke-width="1.8" stroke-linejoin="round"/></svg>
+            </span>
+            <a href="mailto:info@safetypro.com.sa">info@safetypro.com.sa</a>
+          </li>
+          <li>
+            <span class="contact-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="url(#gradOR)" stroke-width="1.8"/><path d="M3 12h18M12 3c2.5 2.6 2.5 15.4 0 18M12 3c-2.5 2.6-2.5 15.4 0 18" fill="none" stroke="url(#gradOR)" stroke-width="1.8"/></svg>
+            </span>
+            <a href="https://www.safetypro.com.sa" target="_blank" rel="noopener">www.safetypro.com.sa</a>
+          </li>
+        </ul>
+      </div>
+
+      <form class="contact-form reveal" id="contactForm">
+        <h3>أرسل لنا رسالة</h3>
+        <div class="field">
+          <label for="name">الاسم</label>
+          <input type="text" id="name" name="name" placeholder="اسمك الكامل" required>
+        </div>
+        <div class="field">
+          <label for="phone">رقم الجوال</label>
+          <input type="tel" id="phone" name="phone" placeholder="05xxxxxxxx" required>
+        </div>
+        <div class="field">
+          <label for="msg">تفاصيل الطلب</label>
+          <textarea id="msg" name="msg" rows="4" placeholder="أخبرنا عن احتياجك من خدمات السلامة..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">إرسال الطلب</button>
+        <p class="form-note" id="formNote" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <a href="#top" class="brand brand-footer">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 120 120" class="shield-svg">
+          <path class="shield-outline" d="M60 6 L106 22 V56 C106 86 86 104 60 116 C34 104 14 86 14 56 V22 Z" fill="#20232a"/>
+          <path d="M60 16 L98 29 V56 C98 80 82 95 60 105 C38 95 22 80 22 56 V29 Z" fill="#f3e7d8"/>
+          <path d="M60 40 L92 54 L60 68 L28 54 Z" fill="url(#gradOR)"/>
+          <path d="M60 62 L88 74 C84 88 74 98 60 105 C46 98 36 88 32 74 Z" fill="url(#gradOR2)"/>
+        </svg>
+      </span>
+      <span class="brand-text">
+        <span class="brand-ar">احتراف السلامة</span>
+        <span class="brand-en">SAFETY PRO</span>
+      </span>
+    </a>
+    <p class="footer-tagline">"احتراف السلامة حماية وأكثر"</p>
+    <nav class="footer-nav">
+      <a href="#about">من نحن</a>
+      <a href="#services">خدماتنا</a>
+      <a href="#vision">رؤيتنا</a>
+      <a href="#contact">تواصل معنا</a>
+    </nav>
+    <p class="footer-copy">© <span id="year"></span> شركة احتراف السلامة للتجارة. جميع الحقوق محفوظة.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
