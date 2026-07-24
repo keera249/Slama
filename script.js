@@ -116,3 +116,14 @@ document.addEventListener('DOMContentLoaded', () => {
     requestAnimationFrame(tick);
   }
 });
+
+const hero = document.getElementById("hero");
+const link = document.getElementById("rd");
+
+window.addEventListener("scroll", () => {
+    if (window.scrollY >= hero.offsetHeight) {
+        link.classList.add("show");
+    } else {
+        link.classList.remove("show");
+    }
+});
